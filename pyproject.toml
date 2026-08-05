@@ -1,11 +1,13 @@
 [project]
 name = "bachelors-thesis"
 version = "0.1.0"
-description = "Reproducible macro data pipeline (CPI, NBP rate, retail sales) for Poland, 2019-2024"
+description = "Liquidity vs profitability of GPW retail companies (2019-2024) plus the Polish macro backdrop"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "matplotlib==3.10.5",
+    "numpy>=2.0",
     "pandas>=3.0.3",
     "requests>=2.34.2",
+    "scipy>=1.14",
 ]

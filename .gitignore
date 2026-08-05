@@ -31,3 +31,10 @@ data/raw/
 # OS
 .DS_Store
 Thumbs.db
+
+# Prywatne: notatki robocze i pliki zrodlowe spolek
+notatki/
+zrodla/
+
+# R3 czeka na wlasna implementacje - tymczasowo poza repo
+r3_empirics/

@@ -8,10 +8,15 @@ inflation, so the official GUS figures (gus_official) are used instead — see R
 Exposes: RtA9  (imported by main.py).
 """
 
+from pathlib import Path
+
 import pandas as pd
 
-retail_above9_raw = pd.read_csv('data/growth rate/sales_above9.csv', sep=';')
-sales_growth_all_raw = pd.read_csv('data/growth rate/sales_growth_all.csv', sep=';')
+# Paths are resolved relative to this file, so the script runs from any directory
+BASE = Path(__file__).parent
+
+retail_above9_raw = pd.read_csv(BASE / 'data' / 'growth rate' / 'sales_above9.csv', sep=';')
+sales_growth_all_raw = pd.read_csv(BASE / 'data' / 'growth rate' / 'sales_growth_all.csv', sep=';')
 
 
 SnG_all = (

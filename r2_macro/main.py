@@ -1,9 +1,11 @@
 """Macro pipeline: builds a combined table of CPI, the NBP reference rate, and
 retail-sales dynamics for Poland (2019-2024) and renders the combination chart.
 
-Run:  uv run python main.py   ->  output/wykres_makro.png
+Run:  uv run python r2_macro/main.py   ->  r2_macro/output/wykres_makro.png
 Note: fetches the NBP rates live over the internet.
 """
+
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -11,8 +13,11 @@ import xml.etree.ElementTree as ET
 from deflator_analysis import RtA9
 import matplotlib.pyplot as plt
 
+# Paths are resolved relative to this file, so the script runs from any directory
+BASE = Path(__file__).parent
+
 # GUS file: 'cp1250' encoding + ';' separator (comma is the decimal mark)
-CPI_raw = pd.read_csv('data/CPI.csv', encoding='cp1250', sep=';')
+CPI_raw = pd.read_csv(BASE / 'data' / 'CPI.csv', encoding='cp1250', sep=';')
 
 CPI = (
     CPI_raw.query('Rok.between(2019,2024)')
@@ -99,5 +104,5 @@ ax.spines['right'].set_visible(False)
 ax.legend(fontsize=9, framealpha=0.9)
 
 plt.tight_layout()
-plt.savefig('output/wykres_makro.png', dpi=300, bbox_inches='tight')
+plt.savefig(BASE / 'output' / 'wykres_makro.png', dpi=300, bbox_inches='tight')
 plt.show()
