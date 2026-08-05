@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Notatki robocze i planowanie (lokalne, nie na GH)
+STATUS.md
+recap_thinking_process.docx
+PORTFOLIO_PLAN.md
+NOTES.md
+TODO.md
+*_DRAFT.md
+*_brief.md
+*_BRIEF.md
+*.scratch.*
+
+# Dane surowe / wrażliwe
+data/raw/
+*.local.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
