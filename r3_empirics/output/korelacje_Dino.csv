@@ -1,0 +1,10 @@
+wsk_plynnosci,wsk_rentownosci,rs,p,istotnosc,sila,kierunek
+CR,ROS,-0.2571,0.6228,nieistotna,słaba,ujemna
+CR,ROA,0.8286,0.0416,istotna,silna,dodatnia
+CR,ROE,-0.4286,0.3965,nieistotna,umiarkowana,ujemna
+QR,ROS,0.1429,0.7872,nieistotna,brak lub znikoma,dodatnia
+QR,ROA,-0.6,0.208,nieistotna,umiarkowana,ujemna
+QR,ROE,0.3143,0.5441,nieistotna,słaba,dodatnia
+ChR,ROS,0.1429,0.7872,nieistotna,brak lub znikoma,dodatnia
+ChR,ROA,-0.6,0.208,nieistotna,umiarkowana,ujemna
+ChR,ROE,0.3143,0.5441,nieistotna,słaba,dodatnia

@@ -11,3 +11,8 @@ dependencies = [
     "requests>=2.34.2",
     "scipy>=1.14",
 ]
+
+[tool.ruff.lint.isort]
+# Without this ruff treats r3_analysis as a third-party package and wants it merged
+# into the matplotlib/numpy block. It is our own module and belongs in its own group.
+known-first-party = ["r3_analysis"]

@@ -1,40 +1,19 @@
-# Python-generated files
+# Python
 __pycache__/
 *.py[oc]
 build/
 dist/
 wheels/
 *.egg-info
-
-# Virtual environments
 .venv
 
-# Notatki robocze i planowanie (lokalne, nie na GH)
-STATUS.md
-recap_thinking_process.docx
-PORTFOLIO_PLAN.md
-NOTES.md
-TODO.md
-*_DRAFT.md
-*_brief.md
-*_BRIEF.md
-*.scratch.*
-
-# Dane surowe / wrażliwe
-data/raw/
-*.local.csv
-
-# IDE
+# IDE / OS
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Prywatne: notatki robocze i pliki zrodlowe spolek
+# Working notes, source spreadsheets, scratch files
 notatki/
 zrodla/
-
-# R3 czeka na wlasna implementacje - tymczasowo poza repo
-r3_empirics/
+podglad.py
